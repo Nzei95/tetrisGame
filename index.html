@@ -13,16 +13,51 @@
         }
         canvas{
             display: block;
-            margin:0 auto;
+            margin:0;
+            left: 80px;
+            top: 20px;
         }
+        table {
+            width:15%;
+          }
+          table, th, td {
+            border: 1px solid rgb(139, 98, 98);
+            border-collapse: collapse;
+          }
+          th, td {
+            padding: 15px;
+            text-align: left;
+          }
+          table tr:nth-child(even) {
+            background-color: #eee;
+          }
+          table tr:nth-child(odd) {
+           background-color: #fff;
+          }
+          table th {
+            background-color: rgb(151, 73, 73);
+            color: white;
+          }
     </style>
 </head>
 <body>
     <canvas id="tetris" width="200" height="400"></canvas>
-    <div>
+    <div style="position:absolute; left:80px; top:500px;">
         <div>Score : <div id="score">0</div></div>
         <div><INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh"></div>
     </div>
+    <table>
+        <tr>
+          <th>Player Name</th>
+          <th>Score</th> 
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+      </table>
     <script src="tetrominoes.js"></script>
     <script src="tetris.js"></script>
 </body>
